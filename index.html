@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateBackGround</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Old Favicon - Grab Icon From Google (Might be unsupported in the future) -->
+    <!-- <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=jacinto.design"> -->
+
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id="gradient">
-	<h1>Back ground generator</h1>
-	<h2>linear gradient is used to create this colorful background</h2>
-	<p>the direction can be changed using range button</P>
-
-		<p> Note: because bottom donot have certain limit in webpages, so specific height i.e (666px) mentioned along with the lineargradient</p>
-		<p>copy the gradient code from below and paste in your css file after adjusting your color</p>
-
-		<pre></pre>
-		 <input type="range" id="deg" name="degree" min="-90" max="181">
-		 <label for="vol">degree (between -90 to 180):</label><br>
-
-		<input class="color1" type="color" name="color1" value="#00ff00">
- 	 	<input class="color2" type="color" name="color2" value="#ff0000">
-		<pre>body{
-			height: 666px;
-			background: <h3></h3>
-		}
-		</pre>
-		<script type="text/javascript" src="script.js"></script>
+<body>
+    <h1>Create Gradient Background</h1>
+    <pre>body{
+    min-height:100vh;
+    background:<h3>linear-gradient(0deg,color,color,....);</h3>
+    }
+    </Pre>    
+    <div class="inputs">
+    <input id="userinput" type="text" placeholder="enter no.of colors/ min-2">
+	<button id="enter">Enter</button>
+    <button id="clear">Clear</button>
+    </div>
+    <div>
+	<input type="range" id="deg" name="degree" min="0" max="360">
+    <label for="vol">change direction</label><br>
+    </div><br>
+	<div id="DIV"></div>
+    <script src="script.js"></script>
 </body>
 </html>
